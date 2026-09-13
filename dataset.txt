@@ -1,0 +1,24 @@
+## Dataset
+
+This project uses the **PlantVillage dataset** hosted on Hugging Face:
+
+**Dataset:** [geraldmc/plantvillage-full](https://huggingface.co/datasets/geraldmc/plantvillage-full)
+
+The dataset is **not stored in this GitHub repository** because of its large size. It is automatically downloaded from Hugging Face when running the notebook.
+
+### Load the dataset
+
+```python
+from datasets import load_dataset
+
+ds = load_dataset(
+    "geraldmc/plantvillage-full",
+    revision="v0.1.0"
+)
+```
+
+No manual dataset download is required.
+
+The dataset contains **54,304 images across 38 plant disease/health classes** and includes a leaf-grouped train/test split.
+
+> **Note:** The dataset is hosted by `geraldmc` on Hugging Face. This repository does not redistribute the dataset; please refer to the dataset page for its license and usage terms.
